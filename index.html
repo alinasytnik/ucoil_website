@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    <title>Ucoil</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
-
-</head>
-
-<body>
-    <script src="script.js"> </script>
-</body>
-
+  <body>
+    <header>
+      <img src="src/images/ucoil-logo.png" alt="Ucoil logo" />
+      <ul id="menu" class="container">
+        <li>Home</li>
+        <li>Products</li>
+        <li>About</li>
+        <li>Contacts</li>
+      </ul>
+    </header>
+    <section id="main-img">
+      <img src="/src/images/main-img.jpg" alt="Factory with tanks." />
+    </section>
+    <section id="products" class="container">
+      <div id="products-container">
+        <div class="product bg-yellow">
+          <h3>
+            Vegetable oils
+          </h3>
+          <img src="/src/icons/food-and-restaurant.svg" alt="image" />
+          <p>Substandard vegetable oils with increased phospholipid indices.</p>
+        </div>
+        <div class="product bg-salad">
+          <h3>
+            Used cooking oil
+          </h3>
+          <img src="/src/icons/olive-oil.svg" alt="image" />
+          <p>Collection of frying oils and fats.</p>
+        </div>
+        <div class="product bg-lightgreen">
+          <h3>
+            Animal Fat
+          </h3>
+          <img src="/src/icons/pig.svg" alt="image" />
+          <p>Animal fats of different quality, soapstock of animal fats.</p>
+        </div>
+        <div class="product bg-darkgreen">
+          <h3>
+            Fatty Acids
+          </h3>
+          <img src="/src/icons/oil-barrel.svg" alt="image" />
+          <p>Services for the processing of oils and fats for fatty acids.</p>
+        </div>
+      </div>
+    </section>
+    <script src="/src/js/script.js"></script>
+  </body>
 </html>
