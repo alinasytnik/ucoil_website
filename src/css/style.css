@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
@@ -106,4 +107,34 @@ header img {
 
 .product p {
     margin-bottom: 0rem;
+}
+
+#about div {
+    margin-top: 23rem;
+    margin-left: 10rem;
+    width: 80%;
+}
+
+#about h1 {
+    text-align: center;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+#about {
+    background-color: #dee3e2;
+    height: 27rem;
+}
+
+#products2-container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -1.5rem;
+}
+
+#products2 {
+    position: relative;
+    margin-top: 6rem;
 }
