@@ -1,0 +1,19 @@
+.bg-yellow {
+  background-color: rgb(152, 171, 150);
+}
+
+.bg-salad {
+  background-color: rgb(173, 175, 134);
+}
+
+.bg-lightgreen {
+  background-color: rgb(106, 142, 148);
+}
+
+.bg-darkgreen {
+  background-color: rgb(76, 96, 110);
+}
+
+.relative {
+  position: relative;
+}
