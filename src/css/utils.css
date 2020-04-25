@@ -13,3 +13,7 @@
 .bg-darkgreen {
   background-color: rgb(76, 96, 110);
 }
+
+.relative {
+  position: relative;
+}
