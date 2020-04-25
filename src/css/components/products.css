@@ -1,0 +1,28 @@
+#products {
+  margin-top: 18.5rem;
+  padding: 7rem 0;
+}
+
+.products__item {
+  padding: 1rem;
+  box-shadow: 10px 10px 53px -23px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  margin-bottom: 2rem;
+  min-height: 34rem;
+  border-radius: 1rem;
+}
+
+.products__item img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #products {
+    margin-top: 0;
+    padding: 1rem;
+  }
+}

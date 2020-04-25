@@ -1,0 +1,43 @@
+.showup {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -1.5rem;
+}
+
+.showup__item {
+  width: 33.3%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.showup__item h3 {
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  height: 5rem;
+}
+
+.showup__item img {
+  width: 30%;
+  margin-bottom: 3rem;
+}
+
+.showup__item p {
+  margin-bottom: 0rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .showup {
+    position: static;
+    display: block;
+  }
+
+  .showup__item {
+    width: 100%;
+  }
+}

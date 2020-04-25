@@ -1,0 +1,17 @@
+#about {
+  margin-top: 18.5rem;
+  padding: 5rem;
+  background: #dee3e2;
+}
+
+#about h1 {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #about {
+    margin-top: 0;
+    padding: 1rem;
+  }
+}
