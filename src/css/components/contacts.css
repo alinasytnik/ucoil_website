@@ -1,0 +1,46 @@
+#contacts {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    background-color: rgb(180, 190, 210);
+    padding-bottom: 0.001rem;
+}
+
+.contacts__item {
+    text-align: center;
+}
+
+#contacts span {
+    display: block;
+}
+
+.contacts__item__icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.contacts__item__icon span {
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.contacts__item__icon img {
+    width: 1.5rem;
+}
+
+.contacts__item p,
+.contacts__item a {
+    font-size: 1.2rem;
+}
+
+#contacts__copyright {
+    text-align: center;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+hr {
+    margin-bottom: 0.5rem;
+}

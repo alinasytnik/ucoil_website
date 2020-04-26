@@ -7,23 +7,21 @@ header {
   transform: translateX(-50%);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  transition: top 0.25s;
+  text-align: center;
 }
 
 header img {
-  height: 5rem;
-  margin: 0 1rem;
+  width: 100%;
+
 }
 
 header ul {
   list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 0;
 }
 
-header ul > li {
-  margin: 0 2rem;
+header ul>li {
   font-size: 1.2rem;
 }
 
@@ -32,25 +30,5 @@ header ul > li {
   height: 70vh;
   object-fit: cover;
   object-position: 50% 41%;
-  filter: brightness(70%);
-}
-
-@media only screen and (max-width: 768px) {
-  header {
-    padding: 0.5rem;
-    left: 50%;
-    position: absolute;
-  }
-
-  header ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  header ul > li {
-    margin: 1rem 0;
-    font-size: 1.2rem;
-  }
+  filter: brightness(88%);
 }
