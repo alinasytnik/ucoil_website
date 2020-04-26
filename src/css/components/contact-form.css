@@ -28,13 +28,13 @@
 }
 
 .contact-form__button {
-    padding: 0.25rem 0 0.25rem 0.5rem;
     border-radius: 5px;
     outline: none;
     background-color: rgb(13, 121, 13);
     color: white;
     transition: box-shadow 0.15s;
     margin-bottom: 1rem;
+    height: 5rem;
 }
 
 #contact-form p {
