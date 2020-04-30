@@ -32,7 +32,6 @@ contactForm.addEventListener("submit", function (e) {
   var isEmailValid = validateEmail(email.value);
   var isDescriptionEmpty = description.value == "";
 
-
   if (isFirstNameEmpty) {
     firstName.style.borderColor = "#f03434";
     firstNameError.innerHTML = "First name can't be empty";
@@ -60,7 +59,6 @@ contactForm.addEventListener("submit", function (e) {
     emailError.innerHTML = "";
   }
 
-
   if (isDescriptionEmpty) {
     description.style.borderColor = "#f03434";
     descriptionError.innerHTML = "Desription can't be empty";
@@ -69,12 +67,19 @@ contactForm.addEventListener("submit", function (e) {
     descriptionError.innerHTML = "";
   }
 
-  if (!isFirstNameEmpty && !isLastNameEmpty && !isEmailEmpty && isEmailValid && !isDescriptionEmpty) {
-    sendEmail(email.value, firstName.value + " " + lastName.value, description.value);
-
+  if (
+    !isFirstNameEmpty &&
+    !isLastNameEmpty &&
+    !isEmailEmpty &&
+    isEmailValid &&
+    !isDescriptionEmpty
+  ) {
+    sendEmail(
+      email.value,
+      firstName.value + " " + lastName.value,
+      description.value
+    );
   }
-
-
 });
 
 function validateEmail(email) {
@@ -88,18 +93,17 @@ function sendEmail(email, fullname, description) {
     Host: "smtp.mailtrap.io",
     Username: "090ebf3926e9cc",
     Password: "f26a1005b69afb",
-    To: 'alinasytnik1999@gmail.com',
+    To: "alinasytnik1999@gmail.com",
     From: email,
     Subject: "Email from Ucoil website",
-    Body: "<html><h2>" + fullname + "</h2><p>" + description + "</p></html>"
-  }).then(
-    function (message) {
-      if (message == "OK") {
-        contactForm.innerHTML = '<div id="contact-form__success"><h3>Successfully submitted email.</h3></div>';
-        contactForm.style.padding = 0;
-      }
-      submitButton.disabled = false;
-      formError.innerHTML = "Form error, try again";
+    Body: "<html><h2>" + fullname + "</h2><p>" + description + "</p></html>",
+  }).then(function (message) {
+    if (message == "OK") {
+      contactForm.innerHTML =
+        '<div id="contact-form__success"><h3>Successfully submitted email.</h3></div>';
+      contactForm.style.padding = 0;
     }
-  );
+    submitButton.disabled = false;
+    formError.innerHTML = "Form error, try again";
+  });
 }

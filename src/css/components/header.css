@@ -13,7 +13,6 @@ header {
 
 header img {
   width: 100%;
-
 }
 
 header ul {
@@ -21,11 +20,11 @@ header ul {
   margin-bottom: 0;
 }
 
-header ul>li {
+header ul > li {
   font-size: 1.2rem;
 }
 
-.header__image {
+#header-image {
   width: 100%;
   height: 70vh;
   object-fit: cover;
