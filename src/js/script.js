@@ -10,6 +10,7 @@ var descriptionError = document.getElementById("description-error");
 var submitButton = document.getElementById("submit-button");
 var formError = document.getElementById("submit-error");
 var header = document.getElementById("header");
+var contactCopyright = document.getElementById("contacts__copyright");
 var prevScrollpos = window.pageYOffset;
 
 window.addEventListener("scroll", bringmenu);
@@ -107,3 +108,10 @@ function sendEmail(email, fullname, description) {
     formError.innerHTML = "Form error, try again";
   });
 }
+
+function setCurrentYear() {
+  const currentYear = new Date().getFullYear();
+  contactCopyright.innerHTML = "All rights reserved © Ucoil " + currentYear;
+}
+
+setCurrentYear();
